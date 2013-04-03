@@ -19,6 +19,8 @@ Program her kapanışta son kayıtlı ayarları bir sonraki açılışta hatırl
 
 Program, FTP erişimi için [System.Net.FtpClient](http://netftp.codeplex.com/) harici kütüphanesini kullanmaktadır. Bunun amacı .NET BCL de bulunan FTP erişim kütüphanesinden daha hızlı ve kararlı çalışmasıdır.
 
+Program ile ilgili olarak, uydu alıcıları ve teknolojileri konsunda Türkiye'deki en büyük forum olan TurkeyForum'daki başlığa [bu bağlantı](http://www.turkeyforum.com/satforum/showthread.php?t=694992)dan ulaşılabilir.
+
 Chipbox HD Mini Kumanda
 -----------------------
 Mini kumandanın temel amacı, Chipbox HD uydu alıcısına temel uzaktan kumanda kontrollerini göndermektir. Bunu yaparken de arayüz tasarımında en küçük alan ile en etkili kullanımı amaçlamaktadır. Programın, açıldığında herhangi bir görsel arayüzü bulunmamaktadır. Sadece görev çubuğunda ki simge aktif olur ve bağlantı durumunu belirten bir bilgi balonu görünür.
@@ -36,3 +38,6 @@ Aşağıda programın örnek arayüzü mevcuttur.
 
 * Simgeye sağ tık yapınca açılan ayar ekranı:
 ![Program Ayar Menüsü](ChipboxKumanda2.png)
+
+Program ile ilgili olarak, uydu alıcıları ve teknolojileri konsunda Türkiye'deki en büyük forum olan TurkeyForum'daki başlığa [bu bağlantı](http://www.turkeyforum.com/satforum/showthread.php?t=694928)dan ulaşılabilir.
+
