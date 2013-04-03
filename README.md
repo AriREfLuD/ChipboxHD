@@ -1,43 +1,45 @@
-ï»¿Chipbox HD Uydu AlÄ±cÄ±sÄ± Yedekleme ve Kontrol YazÄ±lÄ±mlarÄ±
+Chipbox HD Uydu Alıcısı Yedekleme ve Kontrol Yazılımları
 ========================================================
 
-Bu proje, Hiremco Chipbox HD model ARM Linux tabanlÄ± uydu alÄ±cÄ±sÄ±na FTP ve Telnet arabirimi Ã¼zerinden baÄŸlanarak cihazdaki bilgileri yedeklemeyi ve cihazÄ± kumanda etmeyi saÄŸlar. Programlar Visual Studio 2012 tÃ¼mleÅŸik geliÅŸtirme ortamÄ± kullanÄ±larak C# 4.0 programlama dili ile yazÄ±lmÄ±ÅŸtÄ±r.
+Bu proje, Hiremco Chipbox HD model ARM Linux tabanlı uydu alıcısına FTP ve Telnet arabirimi üzerinden bağlanarak cihazdaki bilgileri yedeklemeyi ve cihazı kumanda etmeyi sağlar. Programlar Visual Studio 2012 tümleşik geliştirme ortamı kullanılarak C# 4.0 programlama dili ile yazılmıştır.
 
-Proje de iki temel yazÄ±lÄ±m mevcuttur. Bunlar, yedekleme ve kumanda yazÄ±lÄ±mlarÄ±dÄ±r. AÅŸaÄŸÄ±da her bir programÄ±n detaylÄ± aÃ§Ä±klamasÄ± verilmiÅŸtir.
+Proje de iki temel yazılım mevcuttur. Bunlar, yedekleme ve kumanda yazılımlarıdır. Aşağıda her bir programın detaylı açıklaması verilmiştir.
 
-Chipbox HD Normal ve IPTV Kanal Listesi Yedekleme/Geri YÃ¼kleme YazÄ±lÄ±mÄ±
+Chipbox HD Normal ve IPTV Kanal Listesi Yedekleme/Geri Yükleme Yazılımı
 -----------------------------------------------------------------------
-Program arayÃ¼zÃ¼nde Chipbox baÄŸlantÄ± bilgileri ekranÄ±na cihazÄ±n IP adresi ve Telnet/FTP kullanÄ±cÄ± adÄ± ve ÅŸifre bilgisi girildikten sonra IPTV ve normal kanal listesi iÃ§in ayrÄ± ayrÄ± yedekleme butonlarÄ± kullanÄ±larak yedekleme yapÄ±labilir. Yedeklemeler, programÄ±n .exe dosyasÄ±nÄ±n olduÄŸu klasÃ¶rde .exe dosyasÄ± ile aynÄ± isimde bir klasÃ¶r oluÅŸturularak, klasÃ¶rÃ¼n iÃ§ine yapÄ±lmaktadÄ±r. IPTV ve normal kanal listeleri ayrÄ± klasÃ¶rlere ve dosya isimleri de tarih damgalÄ± olarak yedeklenmektedir. Yedekleme iÅŸlemi tamamlanÄ±nca oluÅŸturulan dosyanÄ±n tam yolu mesaj kutusu aracÄ±lÄ±ÄŸÄ±yla gÃ¶sterilmektedir.
+Program arayüzünde Chipbox bağlantı bilgileri ekranına cihazın IP adresi ve Telnet/FTP kullanıcı adı ve şifre bilgisi girildikten sonra IPTV ve normal kanal listesi için ayrı ayrı yedekleme butonları kullanılarak yedekleme yapılabilir. Yedeklemeler, programın .exe dosyasının olduğu klasörde .exe dosyası ile aynı isimde bir klasör oluşturularak, klasörün içine yapılmaktadır. IPTV ve normal kanal listeleri ayrı klasörlere ve dosya isimleri de tarih damgalı olarak yedeklenmektedir. Yedekleme işlemi tamamlanınca oluşturulan dosyanın tam yolu mesaj kutusu aracılığıyla gösterilmektedir.
 
-* Program arayÃ¼zÃ¼ aÅŸaÄŸÄ±da gÃ¶rÃ¼lebilir.
-![Program ArayÃ¼zÃ¼](ChipboxKanalYedek1.png)
+* Program arayüzü aşağıda görülebilir.
+![Program Arayüzü](ChipboxKanalYedek1.png)
 
-* ProgramÄ±n iÃ§indeki yardÄ±m ekranÄ± kullanÄ±m ile ilgili temel bilgileri iÃ§ermektedir.
-![YardÄ±m EkranÄ±](ChipboxKanalYedek2.png)
+* Programın içindeki yardım ekranı kullanım ile ilgili temel bilgileri içermektedir.
+![Yardım Ekranı](ChipboxKanalYedek2.png)
 
-Program her kapanÄ±ÅŸta son kayÄ±tlÄ± ayarlarÄ± bir sonraki aÃ§Ä±lÄ±ÅŸta hatÄ±rlamak Ã¼zere kaydeder.
+Program her kapanışta son kayıtlı ayarları bir sonraki açılışta hatırlamak üzere kaydeder.
 
-Program, FTP eriÅŸimi iÃ§in [System.Net.FtpClient](http://netftp.codeplex.com/) harici kÃ¼tÃ¼phanesini kullanmaktadÄ±r. Bunun amacÄ± .NET BCL de bulunan FTP eriÅŸim kÃ¼tÃ¼phanesinden daha hÄ±zlÄ± ve kararlÄ± Ã§alÄ±ÅŸmasÄ±dÄ±r.
+Program, FTP erişimi için [System.Net.FtpClient](http://netftp.codeplex.com/) harici kütüphanesini kullanmaktadır. Bunun amacı .NET BCL de bulunan FTP erişim kütüphanesinden daha hızlı ve kararlı çalışmasıdır.
 
-Program ile ilgili olarak, uydu alÄ±cÄ±larÄ± ve teknolojileri konsunda TÃ¼rkiye'deki en bÃ¼yÃ¼k forum olan TurkeyForum'daki baÅŸlÄ±ÄŸa [bu baÄŸlantÄ±](http://www.turkeyforum.com/satforum/showthread.php?t=694992)dan ulaÅŸÄ±labilir.
+Program ile ilgili olarak, uydu alıcıları ve teknolojileri konsunda Türkiye'deki en büyük forum olan TurkeyForum'daki başlığa [bu bağlantı](http://www.turkeyforum.com/satforum/showthread.php?t=694992)dan ulaşılabilir.
 
 Chipbox HD Mini Kumanda
 -----------------------
-Mini kumandanÄ±n temel amacÄ±, Chipbox HD uydu alÄ±cÄ±sÄ±na temel uzaktan kumanda kontrollerini gÃ¶ndermektir. Bunu yaparken de arayÃ¼z tasarÄ±mÄ±nda en kÃ¼Ã§Ã¼k alan ile en etkili kullanÄ±mÄ± amaÃ§lamaktadÄ±r. ProgramÄ±n, aÃ§Ä±ldÄ±ÄŸÄ±nda herhangi bir gÃ¶rsel arayÃ¼zÃ¼ bulunmamaktadÄ±r. Sadece gÃ¶rev Ã§ubuÄŸunda ki simge aktif olur ve baÄŸlantÄ± durumunu belirten bir bilgi balonu gÃ¶rÃ¼nÃ¼r.
+Mini kumandanın temel amacı, Chipbox HD uydu alıcısına temel uzaktan kumanda kontrollerini göndermektir. Bunu yaparken de arayüz tasarımında en küçük alan ile en etkili kullanımı amaçlamaktadır. Programın, açıldığında herhangi bir görsel arayüzü bulunmamaktadır. Sadece görev çubuğunda ki simge aktif olur ve bağlantı durumunu belirten bir bilgi balonu görünür.
 
-Program cihaza baÄŸlanmak iÃ§in uydu alÄ±cÄ±ya Telnet (TCP) baÄŸlantÄ±sÄ± yapar. AyrÄ±ca olasÄ± baÄŸlantÄ± kopmasÄ± durumunda otomatik olarak tekrar baÄŸlanacak ÅŸekilde programlanmÄ±ÅŸtÄ±r.
+Program cihaza bağlanmak için uydu alıcıya Telnet (TCP) bağlantısı yapar. Ayrıca olası bağlantı kopması durumunda otomatik olarak tekrar bağlanacak şekilde programlanmıştır.
 
-Program simgesine sol tÄ±klayarak program arayÃ¼zÃ¼ne, saÄŸ tÄ±klayarak ise ayar menÃ¼sÃ¼ne eriÅŸilmektedir. Program arayÃ¼zÃ¼nÃ¼n kapanmasÄ± iÃ§in arayÃ¼ze tÄ±klandÄ±ktan sonra ekranda herhangi baÅŸka bir noktaya tÄ±klamak yeterlidir. ProgramÄ±n arayÃ¼zÃ¼nde uydu alÄ±cÄ±nÄ±n temel kontrol tuÅŸlarÄ± vardÄ±r, bunlar: AÅŸaÄŸÄ±, yukarÄ±, sola, saÄŸa, kapat, sessiz, menÃ¼ ve Ã§Ä±kÄ±ÅŸ tuÅŸlarÄ±dÄ±r. Ayar menÃ¼sÃ¼nde ise IP adresi giriÅŸ kutusu, baÄŸlantÄ± ve otomatik aÃ§Ä±lÄ±ÅŸ seÃ§enekleri vardÄ±r. BaÄŸlantÄ± ve otomatik aÃ§Ä±lÄ±ÅŸ butonlarÄ±nÄ±n yanÄ±nda durumlarÄ±na gÃ¶re (baÄŸlÄ± ise ya da otomatik aÃ§Ä±lÄ±ÅŸ devrede ise) onay iÅŸareti gÃ¶rÃ¼nmektedir. IP adresi ve diÄŸer seÃ§imler program kapanÄ±rken kaydedilerek bir sonraki aÃ§Ä±lÄ±ÅŸta tekrar yÃ¼klenir.
+Program simgesine sol tıklayarak program arayüzüne, sağ tıklayarak ise ayar menüsüne erişilmektedir. Program arayüzünün kapanması için arayüze tıklandıktan sonra ekranda herhangi başka bir noktaya tıklamak yeterlidir. Programın arayüzünde uydu alıcının temel kontrol tuşları vardır, bunlar: Aşağı, yukarı, sola, sağa, kapat, sessiz, menü ve çıkış tuşlarıdır. Ayar menüsünde ise IP adresi giriş kutusu, bağlantı ve otomatik açılış seçenekleri vardır. Bağlantı ve otomatik açılış butonlarının yanında durumlarına göre (bağlı ise ya da otomatik açılış devrede ise) onay işareti görünmektedir. IP adresi ve diğer seçimler program kapanırken kaydedilerek bir sonraki açılışta tekrar yüklenir.
 
-AyrÄ±ca, kullanÄ±m kolaylÄ±ÄŸÄ± iÃ§in programÄ±n arayÃ¼zÃ¼ne ulaÅŸmadan, herhangi bir anda klavye kÄ±sayollarÄ±nÄ± kullanarak cihaza komutlar gÃ¶ndermek mÃ¼mkÃ¼ndÃ¼r. Klavyeden Alt + [YÃ¶n tuÅŸlarÄ±] kullanÄ±larak cihaza kumandadaki yÃ¶n tuÅŸlarÄ± komutlarÄ± (sol-saÄŸ: ses kontrolÃ¼, aÅŸaÄŸÄ±-yukarÄ±: kanal deÄŸiÅŸtirme) olduÄŸu gibi hÄ±zlÄ±ca gÃ¶nderilebilir. Bu Ã¶zelliÄŸi saÄŸlamak iÃ§in Win32 API'sini kullanan harici [System Hotkey Component](http://www.codeproject.com/Articles/3055/System-Hotkey-Component) kÃ¼tÃ¼phanesi kullanÄ±lmÄ±ÅŸtÄ±r.
+Ayrıca, kullanım kolaylığı için programın arayüzüne ulaşmadan, herhangi bir anda klavye kısayollarını kullanarak cihaza komutlar göndermek mümkündür. Klavyeden Alt + [Yön tuşları] kullanılarak cihaza kumandadaki yön tuşları komutları (sol-sağ: ses kontrolü, aşağı-yukarı: kanal değiştirme) olduğu gibi hızlıca gönderilebilir. Bu özelliği sağlamak için Win32 API'sini kullanan harici [System Hotkey Component](http://www.codeproject.com/Articles/3055/System-Hotkey-Component) kütüphanesi kullanılmıştır.
 
-AÅŸaÄŸÄ±da programÄ±n Ã¶rnek arayÃ¼zÃ¼ mevcuttur.
+Aşağıda programın örnek arayüzü mevcuttur.
 
-* Program arayÃ¼zÃ¼ ve hakkÄ±nda ekranÄ± birlikte gÃ¶rÃ¼nmekte.
-![Program ArayÃ¼zÃ¼ ve YardÄ±m EkranÄ±](ChipboxKumanda1.png)
+* Program arayüzü ve hakkında ekranı birlikte görünmekte.
 
-* Simgeye saÄŸ tÄ±k yapÄ±nca aÃ§Ä±lan ayar ekranÄ±:
-![Program Ayar MenÃ¼sÃ¼](ChipboxKumanda2.png)
+![Program Arayüzü ve Yardım Ekranı](ChipboxKumanda1.png)
 
-Program ile ilgili olarak, uydu alÄ±cÄ±larÄ± ve teknolojileri konsunda TÃ¼rkiye'deki en bÃ¼yÃ¼k forum olan TurkeyForum'daki baÅŸlÄ±ÄŸa [bu baÄŸlantÄ±](http://www.turkeyforum.com/satforum/showthread.php?t=694928)dan ulaÅŸÄ±labilir.
+* Simgeye sağ tık yapınca açılan ayar ekranı:
+
+![Program Ayar Menüsü](ChipboxKumanda2.png)
+
+Program ile ilgili olarak, uydu alıcıları ve teknolojileri konsunda Türkiye'deki en büyük forum olan TurkeyForum'daki başlığa [bu bağlantı](http://www.turkeyforum.com/satforum/showthread.php?t=694928)dan ulaşılabilir.
 
