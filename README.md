@@ -10,9 +10,11 @@ Chipbox HD Normal ve IPTV Kanal Listesi Yedekleme/Geri Yükleme Yazılımı
 Program arayüzünde Chipbox bağlantı bilgileri ekranına cihazın IP adresi ve Telnet/FTP kullanıcı adı ve şifre bilgisi girildikten sonra IPTV ve normal kanal listesi için ayrı ayrı yedekleme butonları kullanılarak yedekleme yapılabilir. Yedeklemeler, programın .exe dosyasının olduğu klasörde .exe dosyası ile aynı isimde bir klasör oluşturularak, klasörün içine yapılmaktadır. IPTV ve normal kanal listeleri ayrı klasörlere ve dosya isimleri de tarih damgalı olarak yedeklenmektedir. Yedekleme işlemi tamamlanınca oluşturulan dosyanın tam yolu mesaj kutusu aracılığıyla gösterilmektedir.
 
 * Program arayüzü aşağıda görülebilir.
+
 ![Program Arayüzü](ChipboxKanalYedek1.png)
 
 * Programın içindeki yardım ekranı kullanım ile ilgili temel bilgileri içermektedir.
+
 ![Yardım Ekranı](ChipboxKanalYedek2.png)
 
 Program her kapanışta son kayıtlı ayarları bir sonraki açılışta hatırlamak üzere kaydeder.
