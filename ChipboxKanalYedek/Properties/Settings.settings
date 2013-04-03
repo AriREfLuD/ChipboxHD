@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChipboxKanalYedek.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="txtIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.2.171</Value>
+    </Setting>
+    <Setting Name="txtKullanici" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="txtSifre" Type="System.String" Scope="User">
+      <Value Profile="(Default)">chipbox</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
